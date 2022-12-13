@@ -1,4 +1,4 @@
-//fifo for i2c ip
+//fifo and edge detector for i2c ip
 
 module fifo(					 //W = 8 (data width) //N = 63 (depth) //M = 6 (2^6 = 64 = N)
 	input clk, 							
