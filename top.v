@@ -1,19 +1,13 @@
-// GPIO IP Example
 // Top-level Verilog (top.v)
-// Jason Losh
+//Ulysses Chaparro 1001718774
+
+// Jason Losh origin code
 
 //-----------------------------------------------------------------------------
 // Hardware Target
 //-----------------------------------------------------------------------------
 
 // Target Platform: DE1-SoC Board
-
-// Hardware configuration:
-// GPIO Port:
-//   GPIO_1[31-0] is used as a general purpose GPIO port
-// HPS interface:
-//   Mapped to offset of 0 in light-weight MM interface aperature
-//   IRQ80 is used as the interrupt interface to the HPS
 
 //-----------------------------------------------------------------------------
 
@@ -252,16 +246,16 @@ module top
     // SoC System
     soc_system u0 (
         .port_data                             (GPIO_1[31:0]),
-		.bus_test_signals_i2c_scl_signal 	   (GPIO_0[0]),
-		.bus_test_signals_i2c_sda_signal	   (GPIO_0[1]),
-		.debug_debug_write_signal			   (GPIO_0[2]),
-		.debug_debug_read_signal			   (GPIO_0[3]),
-		.debug_debug_address_signal			   (GPIO_0[5:4]),
-		.debug_debug_chipselect_signal		   (GPIO_0[6]),
-		.debug_debug_writedata_signal		   (GPIO_0[11:7]),
-		.debug_debug_readdata_signal		   (GPIO_0[16:12]),
-		.debug_wr_index_signal				   (LEDR[4:0]),
-		.debug_rd_index_signal				   (LEDR[9:5]),
+	.bus_test_signals_i2c_scl_signal       (GPIO_0[0]),
+	.bus_test_signals_i2c_sda_signal       (GPIO_0[1]),
+	.debug_debug_write_signal              (GPIO_0[2]),
+	.debug_debug_read_signal	       (GPIO_0[3]),
+	.debug_debug_address_signal	       (GPIO_0[5:4]),
+	.debug_debug_chipselect_signal	       (GPIO_0[6]),
+	.debug_debug_writedata_signal	       (GPIO_0[11:7]),
+	.debug_debug_readdata_signal	       (GPIO_0[16:12]),
+	.debug_wr_index_signal		       (LEDR[4:0]),
+	.debug_rd_index_signal		       (LEDR[9:5]),
         .memory_mem_a                          (HPS_DDR3_ADDR),
         .memory_mem_ba                         (HPS_DDR3_BA),
         .memory_mem_ck                         (HPS_DDR3_CK_P),
