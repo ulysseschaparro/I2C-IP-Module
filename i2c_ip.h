@@ -1,5 +1,4 @@
-// I2C IP Status and Data reg Example
-// I2C IP Status and Data reg Library
+// I2C IP reg control Library
 // Ulysses Chaparro 1001718774
 
 // Jason Losh origin code
@@ -9,13 +8,6 @@
 //-----------------------------------------------------------------------------
 
 // Target Platform: DE1-SoC Board
-
-// Hardware configuration:
-// GPIO Port:
-//   GPIO_1[31-0] is used as a general purpose GPIO port
-// HPS interface:
-//   Mapped to offset of 0 in light-weight MM interface aperature
-//   IRQ80 is used as the interrupt interface to the HPS
 
 //-----------------------------------------------------------------------------
 
