@@ -38,7 +38,7 @@ int main(void)
 	setAddressValue(32); 
 
 	//printf("value to write to control reg: "); //00000000000000100000100110000000 ->write, reg_used = 1, reg 0x09, start (133504 in decimal)
-												 //00000000000000100000000010000000 ->write, reg_used = 1, reg 0x00, start (131200 in decimal)
+						     //00000000000000100000000010000000 ->write, reg_used = 1, reg 0x00, start (131200 in decimal)
 	//scanf("%u", &value);
 	printf("\nset control value: "); 
 	scanf("%u", &value); 
